@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Josefin+Sans"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js"
+    ></script>
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body id="body">
+    <div class="todo" role="doc-chapter">
+      <div class="bg" id="bg">
+        <img
+          src="./images/bg-desktop-light.jpg"
+          alt="background"
+          class="bg_img"
+          id="bgImg"
+        />
+      </div>
+      <div class="content" role="main">
+        <div class="heading">
+          <h1>Todo</h1>
+          <div class="theme">
+            <img
+              src="./images/icon-moon.svg"
+              class="display"
+              alt="dark mode"
+              role="img"
+              id="toggle"
+            />
+          </div>
+        </div>
+        <form role="form">
+          <div class="circle"></div>
+          <input
+            type="text"
+            name="todo_input"
+            id="todo_input"
+            placeholder="Create a new todo..."
+          />
+        </form>
+        <div class="todo-box" id="todoBox" role="dialog">
+          <ul class="list-cont" id="listCont"></ul>
+          <div class="todo-foot">
+            <p id="itemsLeft"><span id="no"></span>&nbsp;Items left</p>
+            <div class="filters">
+              <p id="all">All</p>
+              <p id="active">Active</p>
+              <p id="completed">Completed</p>
+            </div>
+            <p id="clear-completed">Clear Completed</p>
+          </div>
+        </div>
+      </div>
+      <p class="bottom">Drag and drop to reorder list</p>
+    </div>
+    <div class="attribution" role="doc-footnote">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="github.com/prince-coder10">Prince Mbakwe</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
